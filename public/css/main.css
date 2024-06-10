@@ -12,6 +12,7 @@
     --bg-font-title: #000;
     --text-title-color: #fff;
     --display-bg: #737373;
+    --button-color: #fff;
 }
 
 html, body {
@@ -101,7 +102,7 @@ body {
 }
 
 .button {
-    background-color: #737373;
+    background-color: var(--button-color);
     width: 75px;
     height: 75px;
     font-size: 2rem;
