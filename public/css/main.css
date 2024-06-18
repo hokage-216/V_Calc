@@ -70,7 +70,7 @@ body {
 
 #current-log {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: right;
     padding-top: 10px;
     padding-right: 13px;
@@ -78,7 +78,7 @@ body {
 
 #return-result {
     text-align: right;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-top: 20px;
     padding-right: 13px;
 }

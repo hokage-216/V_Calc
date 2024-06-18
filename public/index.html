@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/main.css">
     <script type="module" src="js/calculator.js"></script>
-    <script type="module" src="js/actions.js"></script>
     <title>V Calc | v_1.0</title>
 </head>
 <body>
@@ -16,37 +15,37 @@
     <div id="calc-wrapper">
         <div id="display-container">
             <div id="current-log"></div>
-            <div id="return-result"></div>
+            <div id="return-result">0</div>
         </div>
         <div id="button-container">
             <div class="row">
-                <button type="button" class="button col-1" id="clear-calc">AC</button>
-                <button type="button" class="button col-2" id="clear-entry">CE</button>
-                <button type="button" class="button col-3" id="percentage-sign">%</button>
-                <button type="button" class="button col-4" id="division-sign">/</button>
+                <button type="button" class="button col-1" id="clear-calc" data-value="CE">CE</button>
+                <button type="button" class="button col-2" id="clear-entry" data-value="C">C</button>
+                <button type="button" class="button col-3" id="percentage-sign" data-value="%">%</button>
+                <button type="button" class="button col-4" id="division-sign" data-value="/">/</button>
             </div>
             <div class="row">
-                <button type="button" class="button col-1" id="seven">7</button>
-                <button type="button" class="button col-2" id="eight">8</button>
-                <button type="button" class="button col-3" id="nine">9</button>
-                <button type="button" class="button col-4" id="multiply-sign">x</button>
+                <button type="button" class="button col-1" id="seven" data-value="7">7</button>
+                <button type="button" class="button col-2" id="eight" data-value="8">8</button>
+                <button type="button" class="button col-3" id="nine" data-value="9">9</button>
+                <button type="button" class="button col-4" id="multiply-sign" data-value="*">x</button>
             </div>
             <div class="row">
-                <button type="button" class="button col-1" id="four">4</button>
-                <button type="button" class="button col-2" id="five">5</button>
-                <button type="button" class="button col-3" id="six">6</button>
-                <button type="button" class="button col-4" id="minus-sign">-</button>
+                <button type="button" class="button col-1" id="four" data-value="4">4</button>
+                <button type="button" class="button col-2" id="five" data-value="5">5</button>
+                <button type="button" class="button col-3" id="six" data-value="6">6</button>
+                <button type="button" class="button col-4" id="minus-sign" data-value="-">-</button>
             </div>
             <div class="row">
-                <button type="button" class="button col-1" id="one">1</button>
-                <button type="button" class="button col-2" id="two">2</button>
-                <button type="button" class="button col-3" id="three">3</button>
-                <button type="button" class="button col-4" id="plus-sign">+</button>
+                <button type="button" class="button col-1" id="one" data-value="1">1</button>
+                <button type="button" class="button col-2" id="two" data-value="2">2</button>
+                <button type="button" class="button col-3" id="three" data-value="3">3</button>
+                <button type="button" class="button col-4" id="plus-sign" data-value="+">+</button>
             </div>
             <div class="row">
-                <button type="button" class="button col-1" id="period-sign">.</button>
-                <button type="button" class="button col-2" id="zero">0</button>
-                <button type="button" class="button" id="equal-sign">=</button>
+                <button type="button" class="button col-1" id="period-sign" data-value=".">.</button>
+                <button type="button" class="button col-2" id="zero" data-value="0">0</button>
+                <button type="button" class="button" id="equal-sign" data-value="=">=</button>
             </div>
         </div>
     </div>
