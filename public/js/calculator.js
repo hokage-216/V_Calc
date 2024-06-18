@@ -1,13 +1,12 @@
-// addition functionality
+const btn = document.querySelectorAll('button');
+const currentLog = document.querySelector('#current-log');
+const result = document.querySelector('#return-result');
+let currentInput = "";
+let operator = null;
+let previousInput = "";
 
-function addNum([...n]) {
-    
-}
-
-// subtraction functionality
-
-// division functionality
-
-// multiplication functionality
-
-// percentage functionality`
+btn.forEach((button) => {
+    button.addEventListener("click", () => {
+        const value = this.getAttribute("data-value");
+    })
+});
