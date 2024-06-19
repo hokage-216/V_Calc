@@ -43,3 +43,11 @@ btn.forEach((button) => {
         }
     })
 });
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        const equals = document.querySelector('.button[data-value="="]');
+        equals.click();
+    }
+
+});
